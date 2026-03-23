@@ -5,98 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableset - Terms of Service</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; color: #333; line-height: 1.6; }
-        h1 { font-size: 1.8em; margin-bottom: 0.3em; }
-        h2 { font-size: 1.3em; margin-top: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
-        .date { color: #666; font-size: 0.9em; margin-bottom: 2em; }
-        ul { padding-left: 1.5em; }
-        li { margin-bottom: 0.5em; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a1a; line-height: 1.7; background: #f8faf9;
+        }
+        .header {
+            background: linear-gradient(135deg, #479575 0%, #3a7d63 100%);
+            padding: 48px 24px 40px; text-align: center; color: white;
+        }
+        .header img { width: 72px; height: 72px; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .header h1 { font-size: 1.6em; font-weight: 700; margin-bottom: 4px; }
+        .header .subtitle { opacity: 0.85; font-size: 0.95em; }
+        .nav {
+            background: white; border-bottom: 1px solid #e8ece9; padding: 12px 24px;
+            text-align: center; position: sticky; top: 0; z-index: 10;
+        }
+        .nav a {
+            color: #479575; text-decoration: none; font-size: 0.9em; font-weight: 500;
+            margin: 0 16px; padding: 4px 0; border-bottom: 2px solid transparent;
+        }
+        .nav a.active { border-bottom-color: #479575; }
+        .nav a:hover { border-bottom-color: #479575; }
+        .content { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
+        h2 {
+            font-size: 1.15em; font-weight: 600; color: #2d6a4f; margin-top: 36px;
+            margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #e8f0ec;
+        }
+        p { margin-bottom: 16px; color: #3a3a3a; font-size: 0.95em; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; color: #3a3a3a; font-size: 0.95em; }
+        li strong { color: #1a1a1a; }
+        a { color: #479575; }
+        a:hover { color: #2d6a4f; }
+        .badge {
+            display: inline-block; background: #e8f5ee; color: #2d6a4f;
+            font-size: 0.8em; font-weight: 600; padding: 4px 12px;
+            border-radius: 20px; margin-bottom: 24px;
+        }
+        .footer {
+            text-align: center; padding: 32px 24px; color: #888;
+            font-size: 0.85em; border-top: 1px solid #e8ece9;
+        }
+        @media (max-width: 480px) {
+            .header { padding: 36px 20px 32px; }
+            .header h1 { font-size: 1.3em; }
+            .content { padding: 28px 20px 60px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p class="date">Effective Date: April 2026</p>
+    <div class="header">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAgKADAAQAAAABAAAAgAAAAABIjgR3AAAUtElEQVR4Ae1daawcV5Xu9e2bn5fnJbE9jpcsHockZowNCZCxiLIww6AZFkUChOYHCM0iMZo/oxngDyPEbyQkpNn5MSCh/ABpAmRAjFBInM0GEpw4tuPYz/Ea+z2/5/ded7+e79xT99Ste6u7q6urutqiK89V5557zrnnfOfeW7e2Tn7/d/4219+yQ6CUq2fXeL/lXK7QByFbBPoJyBb//gjIGP9+ArJOQCmftQe/5+33zwEZd4B+ArLFf+D/AdK4/CKwkP4LAAAAAElFTkSuQmCC" alt="Tableset">
+        <h1>Terms of Service</h1>
+        <div class="subtitle">Effective April 2026</div>
+    </div>
 
-    <p>These Terms of Service ("Terms") govern your use of the Tableset mobile application ("App") provided by Tableset LLC ("we", "our", "us"). By using the App, you agree to these Terms.</p>
+    <div class="nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" class="active">Terms of Service</a>
+    </div>
 
-    <h2>1. Subscriptions</h2>
-    <ul>
-        <li>Tableset offers auto-renewing monthly subscriptions: <strong>Basic</strong> ($9.99/month) and <strong>Pro</strong> ($14.99/month).</li>
-        <li>New users receive a <strong>1-week free trial</strong> with full Pro access. After the trial, a subscription is required to continue using AI-powered features.</li>
-        <li>Subscriptions are billed monthly through your Apple ID account. Payment is charged at the end of the free trial or at confirmation of purchase.</li>
-        <li>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period.</li>
-        <li>You can manage or cancel your subscription in your device's Settings &gt; Apple ID &gt; Subscriptions.</li>
-        <li>Refunds are handled by Apple according to their <a href="https://support.apple.com/en-us/HT204084">refund policy</a>.</li>
-    </ul>
+    <div class="content">
+        <span class="badge">Please read carefully</span>
 
-    <h2>2. Free Features</h2>
-    <p>The following features are available without a subscription:</p>
-    <ul>
-        <li>Manual recipe creation and management</li>
-        <li>Meal planning and scheduling</li>
-        <li>Grocery list management</li>
-        <li>Cooking mode (without Q&A)</li>
-        <li>App Help chat</li>
-        <li>Household sharing</li>
-    </ul>
+        <p>These Terms of Service ("Terms") govern your use of the Tableset mobile application ("App") provided by Tableset LLC ("we", "our", "us"). By using the App, you agree to these Terms.</p>
 
-    <h2>3. AI-Generated Content</h2>
-    <ul>
-        <li>Meal suggestions, nutrition estimates, recipe scans, and other AI-generated content are provided for informational purposes only.</li>
-        <li><strong>Nutrition information is AI-estimated and should not be relied upon for medical dietary decisions.</strong> Consult a healthcare professional for medical nutrition advice.</li>
-        <li>AI-generated recipes may contain errors. Always use your own judgment when preparing food, especially regarding allergies and food safety.</li>
-        <li>Cost estimates are approximate and vary by location and retailer.</li>
-    </ul>
+        <h2>1. Subscriptions</h2>
+        <ul>
+            <li>Tableset offers auto-renewing monthly subscriptions: <strong>Basic</strong> ($9.99/month) and <strong>Pro</strong> ($14.99/month).</li>
+            <li>New users receive a <strong>1-week free trial</strong> with full Pro access. After the trial, a subscription is required to continue using AI-powered features.</li>
+            <li>Subscriptions are billed monthly through your Apple ID account. Payment is charged at the end of the free trial or at confirmation of purchase.</li>
+            <li>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period.</li>
+            <li>You can manage or cancel your subscription in your device's Settings &gt; Apple ID &gt; Subscriptions.</li>
+            <li>Refunds are handled by Apple according to their <a href="https://support.apple.com/en-us/HT204084">refund policy</a>.</li>
+        </ul>
 
-    <h2>4. Household Sharing</h2>
-    <ul>
-        <li>Household features allow multiple users to share meal plans and recipes.</li>
-        <li>Dietary preferences and allergies are shared among household members to ensure meal safety. <strong>All household members are responsible for verifying allergy information.</strong></li>
-        <li>Additional shared user slots beyond the first may require an in-app purchase ($2.99 per slot).</li>
-    </ul>
+        <h2>2. Free Features</h2>
+        <p>The following features are available without a subscription:</p>
+        <ul>
+            <li>Manual recipe creation and management</li>
+            <li>Meal planning and scheduling</li>
+            <li>Grocery list management</li>
+            <li>Cooking mode (without Q&A)</li>
+            <li>App Help chat</li>
+            <li>Household sharing</li>
+        </ul>
 
-    <h2>5. Your Content</h2>
-    <ul>
-        <li>You retain ownership of all recipes, meal plans, and other content you create in the App.</li>
-        <li>Recipes and meal data stored on your device remain yours and are not accessed by us.</li>
-        <li>Content shared within a household is visible to all household members.</li>
-    </ul>
+        <h2>3. AI-Generated Content</h2>
+        <ul>
+            <li>Meal suggestions, nutrition estimates, recipe scans, and other AI-generated content are provided for informational purposes only.</li>
+            <li><strong>Nutrition information is AI-estimated and should not be relied upon for medical dietary decisions.</strong> Consult a healthcare professional for medical nutrition advice.</li>
+            <li>AI-generated recipes may contain errors. Always use your own judgment when preparing food, especially regarding allergies and food safety.</li>
+            <li>Cost estimates are approximate and vary by location and retailer.</li>
+        </ul>
 
-    <h2>6. Acceptable Use</h2>
-    <p>You agree not to:</p>
-    <ul>
-        <li>Use the App for any unlawful purpose</li>
-        <li>Attempt to circumvent subscription requirements or usage limits</li>
-        <li>Use automated tools to access the App or its API</li>
-        <li>Share your account credentials with others</li>
-    </ul>
+        <h2>4. Household Sharing</h2>
+        <ul>
+            <li>Household features allow multiple users to share meal plans and recipes.</li>
+            <li>Dietary preferences and allergies are shared among household members to ensure meal safety. <strong>All household members are responsible for verifying allergy information.</strong></li>
+            <li>Additional shared user slots beyond the first may require an in-app purchase ($2.99 per slot).</li>
+        </ul>
 
-    <h2>7. Service Availability</h2>
-    <ul>
-        <li>AI-powered features require an internet connection and depend on third-party API availability.</li>
-        <li>We do not guarantee uninterrupted service. AI features may be temporarily unavailable due to maintenance, API outages, or other factors.</li>
-        <li>Daily usage limits apply based on your subscription tier.</li>
-    </ul>
+        <h2>5. Your Content</h2>
+        <ul>
+            <li>You retain ownership of all recipes, meal plans, and other content you create in the App.</li>
+            <li>Recipes and meal data stored on your device remain yours and are not accessed by us.</li>
+            <li>Content shared within a household is visible to all household members.</li>
+        </ul>
 
-    <h2>8. Account Termination</h2>
-    <ul>
-        <li>You can delete your account at any time from the App (Profile &gt; Delete Account).</li>
-        <li>We reserve the right to suspend or terminate accounts that violate these Terms.</li>
-    </ul>
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use the App for any unlawful purpose</li>
+            <li>Attempt to circumvent subscription requirements or usage limits</li>
+            <li>Use automated tools to access the App or its API</li>
+            <li>Share your account credentials with others</li>
+        </ul>
 
-    <h2>9. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, Tableset LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App. This includes, but is not limited to, damages arising from AI-generated content, meal suggestions, nutrition estimates, or allergy information.</p>
+        <h2>7. Service Availability</h2>
+        <ul>
+            <li>AI-powered features require an internet connection and depend on third-party API availability.</li>
+            <li>We do not guarantee uninterrupted service. AI features may be temporarily unavailable due to maintenance, API outages, or other factors.</li>
+            <li>Daily usage limits apply based on your subscription tier.</li>
+        </ul>
 
-    <h2>10. Disclaimer of Warranties</h2>
-    <p>The App is provided "as is" without warranties of any kind, either express or implied. We do not warrant that AI-generated content will be accurate, complete, or suitable for any particular purpose.</p>
+        <h2>8. Account Termination</h2>
+        <ul>
+            <li>You can delete your account at any time from the App (Profile &gt; Delete Account).</li>
+            <li>We reserve the right to suspend or terminate accounts that violate these Terms.</li>
+        </ul>
 
-    <h2>11. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+        <h2>9. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Tableset LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App. This includes, but is not limited to, damages arising from AI-generated content, meal suggestions, nutrition estimates, or allergy information.</p>
 
-    <h2>12. Governing Law</h2>
-    <p>These Terms are governed by the laws of the Commonwealth of Pennsylvania, United States.</p>
+        <h2>10. Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" without warranties of any kind, either express or implied. We do not warrant that AI-generated content will be accurate, complete, or suitable for any particular purpose.</p>
 
-    <h2>13. Contact Us</h2>
-    <p>If you have questions about these Terms, please contact us at <a href="mailto:tableset.legal@gmail.com">tableset.legal@gmail.com</a>.</p>
+        <h2>11. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+
+        <h2>12. Governing Law</h2>
+        <p>These Terms are governed by the laws of the Commonwealth of Pennsylvania, United States.</p>
+
+        <h2>13. Contact Us</h2>
+        <p>If you have questions about these Terms, please contact us at <a href="mailto:tableset.legal@gmail.com">tableset.legal@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Tableset LLC. All rights reserved.
+    </div>
 </body>
 </html>
