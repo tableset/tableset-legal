@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableset - User Guide</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a1a; line-height: 1.7; background: #f8faf9;
+        }
+        .header {
+            background: linear-gradient(135deg, #479575 0%, #3a7d63 100%);
+            padding: 48px 24px 40px; text-align: center; color: white;
+        }
+        .header img { width: 72px; height: 72px; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .header h1 { font-size: 1.6em; font-weight: 700; margin-bottom: 4px; }
+        .header .subtitle { opacity: 0.85; font-size: 0.95em; }
+        .nav {
+            background: white; border-bottom: 1px solid #e8ece9; padding: 12px 24px;
+            text-align: center; position: sticky; top: 0; z-index: 10;
+        }
+        .nav a {
+            color: #479575; text-decoration: none; font-size: 0.9em; font-weight: 500;
+            margin: 0 12px; padding: 4px 0; border-bottom: 2px solid transparent;
+        }
+        .nav a.active { border-bottom-color: #479575; }
+        .nav a:hover { border-bottom-color: #479575; }
+        .content { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+        h2 {
+            font-size: 1.3em; font-weight: 700; color: #2d6a4f; margin-top: 48px;
+            margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e8f0ec;
+        }
+        h3 { font-size: 1.05em; font-weight: 600; color: #3a3a3a; margin-top: 28px; margin-bottom: 10px; }
+        p { margin-bottom: 16px; color: #3a3a3a; font-size: 0.95em; }
+        ul, ol { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; color: #3a3a3a; font-size: 0.95em; }
+        li strong { color: #1a1a1a; }
+        a { color: #479575; }
+        a:hover { color: #2d6a4f; }
+        .badge {
+            display: inline-block; background: #e8f5ee; color: #2d6a4f;
+            font-size: 0.8em; font-weight: 600; padding: 4px 12px;
+            border-radius: 20px; margin-bottom: 24px;
+        }
+        .toc {
+            background: white; border: 1px solid #e8ece9; border-radius: 12px;
+            padding: 24px 28px; margin-bottom: 32px;
+        }
+        .toc h3 { margin-top: 0; color: #2d6a4f; font-size: 1em; }
+        .toc ol { margin-bottom: 0; }
+        .toc li { margin-bottom: 4px; }
+        .toc a { text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .screenshot {
+            background: #e8ece9; border-radius: 12px; padding: 40px 20px;
+            text-align: center; margin: 20px 0; color: #888; font-size: 0.85em; font-style: italic;
+        }
+        .tip {
+            background: #e8f5ee; border-left: 4px solid #479575; padding: 12px 16px;
+            border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 0.9em;
+        }
+        .tip strong { color: #2d6a4f; }
+        .example {
+            background: #f0f4f2; border-radius: 8px; padding: 16px;
+            margin: 12px 0; font-size: 0.9em;
+        }
+        .example .label { font-weight: 600; color: #2d6a4f; margin-bottom: 6px; }
+        .family-intro {
+            background: white; border: 1px solid #e8ece9; border-radius: 12px;
+            padding: 20px 24px; margin: 20px 0;
+        }
+        .family-intro .member { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
+        .family-intro .emoji { font-size: 1.5em; }
+        .footer {
+            text-align: center; padding: 32px 24px; color: #888;
+            font-size: 0.85em; border-top: 1px solid #e8ece9;
+        }
+        @media (max-width: 480px) {
+            .header { padding: 36px 20px 32px; }
+            .header h1 { font-size: 1.3em; }
+            .content { padding: 28px 20px 60px; }
+            .nav a { margin: 0 8px; font-size: 0.82em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icon.png" alt="Tableset">
+        <h1>User Guide</h1>
+        <div class="subtitle">Everything you need to know about Tableset</div>
+    </div>
+
+    <div class="nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="guide.html" class="active">User Guide</a>
+    </div>
+
+    <div class="content">
+        <span class="badge">Welcome to Tableset</span>
+
+        <p>Tableset is your AI-powered meal planning companion. It helps you plan meals, discover recipes, cook with confidence, and share the experience with your family. This guide walks you through everything the app can do.</p>
+
+        <div class="family-intro">
+            <h3 style="margin-top:0">Meet the Rivera Family</h3>
+            <p style="margin-bottom:12px">Throughout this guide, we'll follow the Rivera family as they use Tableset to plan their weekly meals.</p>
+            <div class="member"><span class="emoji">&#x1F469;&#x200D;&#x1F373;</span> <span><strong>Maria</strong> &mdash; Loves cooking and trying new cuisines. She set up the household.</span></div>
+            <div class="member"><span class="emoji">&#x1F468;&#x200D;&#x1F4BC;</span> <span><strong>David</strong> &mdash; Busy schedule, prefers quick meals under 30 minutes.</span></div>
+            <div class="member"><span class="emoji">&#x1F467;</span> <span><strong>Sofia</strong> (age 8) &mdash; Adventurous eater, but has a nut allergy.</span></div>
+            <div class="member"><span class="emoji">&#x1F466;</span> <span><strong>Leo</strong> (age 5) &mdash; Picky eater. Loves pasta and chicken nuggets.</span></div>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>In This Guide</h3>
+            <ol>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#planning">Planning Your Week</a></li>
+                <li><a href="#discovering">Discovering New Recipes</a></li>
+                <li><a href="#library">Your Recipe Library</a></li>
+                <li><a href="#cooking">Cooking with Tableset</a></li>
+                <li><a href="#sue">Meet Sue, Your Sous Chef</a></li>
+                <li><a href="#family">Sharing with Family</a></li>
+                <li><a href="#grocery">Grocery Lists</a></li>
+                <li><a href="#settings">Settings &amp; Account</a></li>
+            </ol>
+        </div>
+
+        <!-- 1. Getting Started -->
+        <h2 id="getting-started">1. Getting Started</h2>
+
+        <h3>Signing In</h3>
+        <p>When you first open Tableset, you'll see a <strong>Sign in with Apple</strong> button. Tap it to create your account using your Apple ID. Your first name is used as your display name within the app &mdash; no email or last name is collected.</p>
+
+        <div class="screenshot">[Screenshot: Sign-in screen]</div>
+
+        <h3>Your Free Trial</h3>
+        <p>New users get a <strong>1-week free trial</strong> with full access to every feature. After the trial, choose a subscription plan to continue:</p>
+        <ul>
+            <li><strong>Basic</strong> ($9.99/month) &mdash; AI meal suggestions, Fill Week, recipe scanning &amp; importing, nutrition analysis, and AI-generated meal images.</li>
+            <li><strong>Pro</strong> ($14.99/month) &mdash; Everything in Basic, plus Recipe Q&amp;A chat, Cooking Mode Q&amp;A, and higher daily limits.</li>
+        </ul>
+
+        <h3>Navigating the App</h3>
+        <p>Tableset has five main areas, accessible from the tab bar at the bottom of the screen:</p>
+        <ul>
+            <li><strong>Plan</strong> &mdash; Your weekly meal calendar</li>
+            <li><strong>Grocery</strong> &mdash; Auto-generated shopping list</li>
+            <li><strong>Sue</strong> (center button) &mdash; Your AI sous chef assistant</li>
+            <li><strong>Suggest</strong> &mdash; AI-powered meal recommendations</li>
+            <li><strong>Recipes</strong> &mdash; Your personal recipe library</li>
+        </ul>
+
+        <div class="screenshot">[Screenshot: Tab bar with all 5 tabs visible]</div>
+
+        <!-- 2. Planning Your Week -->
+        <h2 id="planning">2. Planning Your Week</h2>
+
+        <p>The Plan tab is where your week comes together. You'll see seven day cards, each showing your planned meals.</p>
+
+        <div class="screenshot">[Screenshot: Plan tab with a filled week]</div>
+
+        <h3>Fill Your Week with AI</h3>
+        <p>Instead of planning each meal one by one, let AI do the heavy lifting:</p>
+        <ul>
+            <li><strong>Fill with New Ideas</strong> &mdash; Tap the wand icon in the toolbar and select this option. AI generates a full week of meals tailored to your household's preferences, dietary restrictions, and time constraints.</li>
+            <li><strong>Fill from My Recipes</strong> &mdash; Same as above, but AI picks from recipes you've already saved.</li>
+            <li><strong>Fill Day</strong> &mdash; Tap the "Fill Day" button on any day card to fill just that day.</li>
+        </ul>
+
+        <div class="example">
+            <div class="label">Example</div>
+            Maria taps <strong>Fill with New Ideas</strong> on Sunday evening. Tableset knows that David prefers quick meals, Sofia has a nut allergy, and Leo won't eat anything too spicy. Within seconds, the entire week is planned with meals everyone can enjoy.
+        </div>
+
+        <h3>Adding Meals Manually</h3>
+        <p>Prefer to choose your own meals? Tap <strong>Add Meal</strong> at the bottom of any day card. You can pick from your saved recipes or create a new one on the spot.</p>
+
+        <h3>Per-Slot AI Suggestions</h3>
+        <p>Each empty meal slot has a sparkle button. Tap it to get an AI suggestion for just that slot &mdash; perfect for when you have most of the week planned but need inspiration for one meal.</p>
+
+        <h3>Marking Meals as Cooked</h3>
+        <p>When you've made a meal, tap the checkmark to mark it as cooked. You'll be prompted to rate it &mdash; your feedback helps the AI learn what your household enjoys.</p>
+
+        <h3>Rating Meals</h3>
+        <p>After cooking, you can rate each meal with:</p>
+        <ul>
+            <li>Star rating (1&ndash;5)</li>
+            <li>Thumbs up or down</li>
+            <li>"Would make again?" toggle</li>
+            <li>Feedback tags (too salty, kids loved it, etc.)</li>
+            <li>Optional notes</li>
+        </ul>
+        <p>In a household, you can also select who ate the meal. This helps the AI understand individual preferences over time.</p>
+
+        <div class="screenshot">[Screenshot: Rating view with stars and tags]</div>
+
+        <div class="tip"><strong>Tip:</strong> The more you rate, the better your suggestions get. Even a quick star rating makes a difference.</div>
+
+        <h3>Prep Summary</h3>
+        <p>Before a big cooking day, tap the wand icon and select <strong>Prep Summary</strong>. You'll get an overview of all the prep work needed for your planned meals &mdash; what to chop, marinate, or thaw ahead of time.</p>
+
+        <h3>Weekly Nutrition</h3>
+        <p>Want to see how your week stacks up nutritionally? Select <strong>Weekly Nutrition</strong> from the toolbar menu to see estimated calories, protein, carbs, and fat across all your planned meals.</p>
+
+        <!-- 3. Discovering New Recipes -->
+        <h2 id="discovering">3. Discovering New Recipes</h2>
+
+        <p>The Suggest tab is your recipe discovery hub. Tell Tableset what you're in the mood for, and AI will find meals that match.</p>
+
+        <div class="screenshot">[Screenshot: Suggest tab with occasion cards]</div>
+
+        <h3>Cravings</h3>
+        <p>Type what you're craving in the text box &mdash; "something spicy", "comfort food", "quick pasta" &mdash; and tap <strong>Get Suggestions</strong>. AI generates personalized meal ideas based on your input and your household's preferences.</p>
+
+        <h3>Occasions</h3>
+        <p>Planning a special event? Tap one of the occasion cards:</p>
+        <ul>
+            <li>Game Day, Date Night, Holiday Feast, BBQ, Brunch, Potluck, Pizza Night, Taco Night, and more</li>
+        </ul>
+        <p>Each occasion generates themed meal suggestions perfect for the event.</p>
+
+        <h3>Filters</h3>
+        <p>Narrow your suggestions with filter pills: <strong>Quick</strong> (under 30 minutes), <strong>Comfort</strong>, <strong>Healthy</strong>, or <strong>New Cuisine</strong>.</p>
+
+        <h3>Working with Suggestions</h3>
+        <p>Each suggestion card shows the meal name, cuisine, cooking time, and difficulty. You can:</p>
+        <ul>
+            <li><strong>Accept</strong> &mdash; Add it to your recipe library and plan</li>
+            <li><strong>Reject</strong> &mdash; Tell the AI you're not interested (helps future suggestions)</li>
+            <li><strong>Start Cooking</strong> &mdash; Jump straight into cooking mode</li>
+            <li><strong>Get More</strong> &mdash; Load additional suggestions</li>
+        </ul>
+
+        <div class="example">
+            <div class="label">Example</div>
+            David types "quick chicken" on a busy Tuesday. Tableset suggests a 20-minute lemon herb chicken that accounts for Sofia's nut allergy and Leo's mild spice preference.
+        </div>
+
+        <!-- 4. Your Recipe Library -->
+        <h2 id="library">4. Your Recipe Library</h2>
+
+        <p>The Recipes tab is your personal cookbook. All recipes you create, scan, import, or accept from suggestions live here.</p>
+
+        <div class="screenshot">[Screenshot: Recipe library with cards]</div>
+
+        <h3>Adding Recipes</h3>
+        <p>Tap the <strong>+</strong> button to add recipes in several ways:</p>
+
+        <h3>Type It In</h3>
+        <p>Create a recipe from scratch. Enter the name, ingredients, steps, cuisine type, difficulty, and cooking time.</p>
+
+        <h3>Scan a Recipe</h3>
+        <p>Have a recipe in a cookbook or on a card? Take a photo (or multiple photos) and AI will read the text and extract the ingredients and steps automatically. You can review and edit before saving.</p>
+
+        <h3>Import from a Link</h3>
+        <p>Found a recipe online? Copy the URL and paste it into Tableset. AI extracts the recipe from the webpage &mdash; no more scrolling past life stories to find the ingredients.</p>
+
+        <div class="tip"><strong>Tip:</strong> You can also share a recipe URL from your browser directly to Tableset using the Share menu.</div>
+
+        <h3>Recipe Details</h3>
+        <p>Tap any recipe to see the full details:</p>
+        <ul>
+            <li><strong>Overview</strong> &mdash; Ingredients (with serving adjustments), step-by-step instructions, quick-add to plan</li>
+            <li><strong>Nutrition</strong> &mdash; AI-estimated calories, macros, and cost per serving</li>
+            <li><strong>History</strong> &mdash; Past ratings, who cooked it, and feedback</li>
+        </ul>
+
+        <div class="screenshot">[Screenshot: Recipe detail view]</div>
+
+        <h3>Adjusting Servings</h3>
+        <p>Need to cook for more (or fewer) people? Use the serving adjuster to scale the recipe up or down. Ingredient quantities update automatically with smart fraction formatting.</p>
+
+        <!-- 5. Cooking with Tableset -->
+        <h2 id="cooking">5. Cooking with Tableset</h2>
+
+        <p>When you're ready to cook, tap <strong>Start Cooking</strong> on any recipe. This opens Cooking Mode &mdash; a distraction-free, step-by-step view designed for the kitchen.</p>
+
+        <div class="screenshot">[Screenshot: Cooking mode step view]</div>
+
+        <h3>Step-by-Step Guidance</h3>
+        <p>Each step is displayed in large, easy-to-read text. Swipe or tap the arrows to move between steps. A progress bar at the top shows how far along you are.</p>
+
+        <h3>Timers</h3>
+        <p>When a step involves timing (simmering, baking, resting), tap the timer button to start a countdown. You'll get a haptic buzz when time's up. Multiple timers can run simultaneously for different steps.</p>
+
+        <h3>Ingredient Checklist</h3>
+        <p>Toggle the ingredient view to see what you need for the current step. Tap ingredients as you prep them to check them off.</p>
+
+        <h3>Ask Questions While Cooking (Pro)</h3>
+        <p>With a Pro subscription, you can ask questions during cooking: "What does 'deglaze' mean?", "How do I know when the onions are caramelized?", "Can I substitute butter for oil?" The AI answers in the context of your specific recipe.</p>
+
+        <div class="example">
+            <div class="label">Example</div>
+            Maria is making a new Thai curry. On step 3, she's unsure how thin to slice the lemongrass. She types "How thin should I cut the lemongrass?" and gets an instant answer with a tip about bruising it first for more flavor.
+        </div>
+
+        <!-- 6. Meet Sue -->
+        <h2 id="sue">6. Meet Sue, Your Sous Chef</h2>
+
+        <p>Sue is your AI sous chef &mdash; available anytime from the raised center button in the tab bar. She's not just a chatbot; she can actually take actions in the app on your behalf.</p>
+
+        <div class="screenshot">[Screenshot: Sue chat conversation]</div>
+
+        <h3>What Sue Can Do</h3>
+        <ul>
+            <li><strong>Create recipes</strong> &mdash; "Make me a quick weeknight pasta recipe"</li>
+            <li><strong>Add meals to your plan</strong> &mdash; "Add something healthy for dinner tonight"</li>
+            <li><strong>Answer cooking questions</strong> &mdash; "What pairs well with salmon?"</li>
+            <li><strong>Manage settings</strong> &mdash; "Add a nut allergy for Sofia"</li>
+            <li><strong>Summarize your plan</strong> &mdash; "What's on the menu this week?"</li>
+            <li><strong>Suggest improvements</strong> &mdash; "How can I make this recipe healthier?"</li>
+        </ul>
+
+        <h3>Context Awareness</h3>
+        <p>Sue knows what screen you're on. If you're looking at a recipe, she can answer questions about that specific dish. If you're on the Plan tab, she can help fill or rearrange your week.</p>
+
+        <h3>Learning Your Preferences</h3>
+        <p>The more you use Tableset, the better Sue gets. She learns from your meal ratings, cooking history, and the cuisines you gravitate toward. Over time, her suggestions become more and more tailored to your household.</p>
+
+        <div class="tip"><strong>Tip:</strong> You can resize Sue's chat window by dragging the handle at the top. Pull it up for a full-screen conversation, or keep it as a half-screen overlay while you browse.</div>
+
+        <!-- 7. Sharing with Family -->
+        <h2 id="family">7. Sharing with Family</h2>
+
+        <p>Tableset is built for families. When you create a household, everyone can see the meal plan, coordinate cooking, and make sure every meal is safe for everyone.</p>
+
+        <div class="screenshot">[Screenshot: Household member list]</div>
+
+        <h3>Creating a Household</h3>
+        <p>Go to your <strong>Profile</strong> and tap <strong>Create Household</strong>. Give it a name (like "The Riveras") and you're the owner.</p>
+
+        <h3>Inviting Members</h3>
+        <p>Tap <strong>Invite</strong> to generate a 6-character invite code. Share it with family members via text message &mdash; they'll get a link they can tap to join directly.</p>
+
+        <div class="example">
+            <div class="label">Example</div>
+            Maria creates "The Riveras" household and texts David an invite link. David taps the link on his phone, and he's instantly added. Now they both see the same meal plan.
+        </div>
+
+        <h3>Adding Dependents</h3>
+        <p>Family members who don't have their own device (like young children) can be added as <strong>dependents</strong>. You set their name, dietary preferences, and allergies. Their needs are automatically included when AI plans meals.</p>
+
+        <div class="tip"><strong>Tip:</strong> Sofia's nut allergy is set in her dependent profile. Every AI-generated meal automatically avoids tree nuts and peanuts &mdash; no need to remember to mention it each time.</div>
+
+        <h3>Dietary Safety</h3>
+        <p>Each household member has their own dietary profile: allergies, restrictions (vegetarian, gluten-free, etc.), health goals, spice tolerance, and cuisine preferences. When the AI suggests meals, it considers <em>everyone</em> who's eating.</p>
+
+        <h3>Shared Meal Plans</h3>
+        <p>Changes to the meal plan are visible to all household members in real time. You can see who added each meal and coordinate who's cooking what.</p>
+
+        <h3>Shared Recipes</h3>
+        <p>Found a great recipe? Share it to the household so everyone can access it. Tap the share icon on any recipe detail page.</p>
+
+        <!-- 8. Grocery Lists -->
+        <h2 id="grocery">8. Grocery Lists</h2>
+
+        <p>Your meal plan automatically generates a consolidated grocery list. No more forgetting ingredients or buying duplicates.</p>
+
+        <div class="screenshot">[Screenshot: Grocery list with categories]</div>
+
+        <h3>How It Works</h3>
+        <p>Tableset looks at every recipe in your weekly plan, combines the ingredients, and groups them by category: produce, proteins, dairy, pantry staples, and more. Duplicate ingredients are merged (two recipes that need onions? You'll see the combined amount).</p>
+
+        <h3>At the Store</h3>
+        <p>Check off items as you shop. In a household, checked items sync so both partners can shop from the same list without doubling up.</p>
+
+        <h3>Adding Custom Items</h3>
+        <p>Need something that isn't in a recipe? Add items manually to the list.</p>
+
+        <!-- 9. Settings & Account -->
+        <h2 id="settings">9. Settings &amp; Account</h2>
+
+        <p>Tap your profile icon (top right on most screens) to access settings.</p>
+
+        <div class="screenshot">[Screenshot: Profile/settings screen]</div>
+
+        <h3>Dietary Preferences</h3>
+        <p>Set your allergies, dietary restrictions (vegetarian, vegan, gluten-free, etc.), health goals, foods to avoid, spice tolerance, and cuisine preferences. These apply to AI suggestions and are shared with your household.</p>
+
+        <h3>Meal Types</h3>
+        <p>Choose which meals to plan for: breakfast, lunch, dinner, and/or snacks. Each day in your plan will show slots for your enabled meal types.</p>
+
+        <h3>Cooking Time</h3>
+        <p>Set maximum cooking time per meal type. If David only has 20 minutes for lunch, AI won't suggest a 2-hour stew.</p>
+
+        <h3>Appearance</h3>
+        <p>Switch between light and dark mode.</p>
+
+        <h3>Subscription</h3>
+        <p>View your current plan, upgrade or downgrade, and manage your subscription through Apple's subscription settings.</p>
+
+        <h3>Delete Account</h3>
+        <p>Scroll to the bottom of your profile to find <strong>Delete Account</strong>. This permanently removes all your server-side data. Recipes and meal plans stored on your device are not affected.</p>
+
+        <div class="tip"><strong>Tip:</strong> If you're looking for the Delete Account button, scroll past the Sign Out button &mdash; it's in its own section below.</div>
+
+        <h3>Getting Help</h3>
+        <p>The <strong>App Help</strong> chat is always available in your settings, regardless of your subscription status. Ask questions about how to use any feature and get instant guidance.</p>
+
+        <p style="margin-top: 40px; text-align: center; color: #888; font-size: 0.9em;">That's everything! If you have questions, reach out to us at <a href="mailto:tableset.legal@gmail.com">tableset.legal@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Tableset LLC. All rights reserved.
+    </div>
+</body>
+</html>
