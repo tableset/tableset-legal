@@ -54,8 +54,11 @@
         .toc a { text-decoration: none; }
         .toc a:hover { text-decoration: underline; }
         .screenshot {
-            background: #e8ece9; border-radius: 12px; padding: 40px 20px;
-            text-align: center; margin: 20px 0; color: #888; font-size: 0.85em; font-style: italic;
+            text-align: center; margin: 20px 0;
+        }
+        .screenshot img {
+            max-width: 280px; width: 100%; border-radius: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12); border: 1px solid #e8ece9;
         }
         .tip {
             background: #e8f5ee; border-left: 4px solid #479575; padding: 12px 16px;
@@ -134,7 +137,7 @@
         <h3>Signing In</h3>
         <p>When you first open Tableset, you'll see a <strong>Sign in with Apple</strong> button. Tap it to create your account using your Apple ID. Your first name is used as your display name within the app &mdash; no email or last name is collected.</p>
 
-        <div class="screenshot">[Screenshot: Sign-in screen]</div>
+        <!-- Sign-in screenshot omitted for simplicity -->
 
         <h3>Your Free Trial</h3>
         <p>New users get a <strong>1-week free trial</strong> with full access to every feature. After the trial, choose a subscription plan to continue:</p>
@@ -153,14 +156,14 @@
             <li><strong>Grocery</strong> &mdash; Auto-generated shopping list from your planned meals</li>
         </ul>
 
-        <div class="screenshot">[Screenshot: Tab bar with all 5 tabs visible]</div>
+        <div class="screenshot"><img src="screenshots/01-plan-tab.png" alt="Tableset Plan tab showing a filled week"></div>
 
         <!-- 2. Discovering New Recipes -->
         <h2 id="discovering">2. Discovering New Recipes</h2>
 
         <p>The Suggest tab is your recipe discovery hub. Tell Tableset what you're in the mood for, and AI will find meals that match.</p>
 
-        <div class="screenshot">[Screenshot: Suggest tab with occasion cards]</div>
+        <div class="screenshot"><img src="screenshots/03-suggest-tab.png" alt="Suggest tab with occasion cards and filters"></div>
 
         <h3>Cravings</h3>
         <p>Type what you're craving in the text box &mdash; "something spicy", "comfort food", "quick pasta" &mdash; and tap <strong>Get Suggestions</strong>. AI generates personalized meal ideas based on your input and your household's preferences.</p>
@@ -194,7 +197,7 @@
 
         <p>The Recipes tab is your personal cookbook. All recipes you create, scan, import, or accept from suggestions live here.</p>
 
-        <div class="screenshot">[Screenshot: Recipe library with cards]</div>
+        <div class="screenshot"><img src="screenshots/04-recipes-tab.png" alt="Recipe library with recipe cards"></div>
 
         <h3>Adding Recipes</h3>
         <p>Tap the <strong>+</strong> button to add recipes in several ways:</p>
@@ -218,7 +221,7 @@
             <li><strong>History</strong> &mdash; Past ratings, who cooked it, and feedback</li>
         </ul>
 
-        <div class="screenshot">[Screenshot: Recipe detail view]</div>
+        <div class="screenshot"><img src="screenshots/05-recipe-detail.png" alt="Recipe detail with ingredients and Start Cooking"></div>
 
         <h3>Adjusting Servings</h3>
         <p>Need to cook for more (or fewer) people? Use the serving adjuster to scale the recipe up or down. Ingredient quantities update automatically with smart fraction formatting.</p>
@@ -228,7 +231,7 @@
 
         <p>When you're ready to cook, tap <strong>Start Cooking</strong> on any recipe. This opens Cooking Mode &mdash; a distraction-free, step-by-step view designed for the kitchen.</p>
 
-        <div class="screenshot">[Screenshot: Cooking mode step view]</div>
+        <!-- Cooking mode screenshot — capture when user enters cooking mode -->
 
         <h3>Step-by-Step Guidance</h3>
         <p>Each step is displayed in large, easy-to-read text. Swipe or tap the arrows to move between steps. A progress bar at the top shows how far along you are.</p>
@@ -252,7 +255,7 @@
 
         <p>Sue is your AI sous chef &mdash; always ready with ideas, answers, and hands-on help. Tap the raised center button in the tab bar to chat with her anytime. She's not just a chatbot; she can actually take actions in the app on your behalf.</p>
 
-        <div class="screenshot">[Screenshot: Sue chat conversation]</div>
+        <div class="screenshot"><img src="screenshots/07-sue-chat.png" alt="Sue the Sous Chef chat interface"></div>
 
         <h3>What Sue Can Do</h3>
         <ul>
@@ -277,7 +280,7 @@
 
         <p>When you're ready to organize your meals for the week, the Plan tab brings it all together. You'll see seven day cards, each showing your planned meals.</p>
 
-        <div class="screenshot">[Screenshot: Plan tab with a filled week]</div>
+        <div class="screenshot"><img src="screenshots/01-plan-tab.png" alt="Weekly meal plan with the Smith family"></div>
 
         <h3>Fill Your Week with AI</h3>
         <p>Instead of planning each meal one by one, let AI do the heavy lifting:</p>
@@ -312,7 +315,7 @@
         </ul>
         <p>In a household, you can also select who ate the meal. This helps the AI understand individual preferences over time.</p>
 
-        <div class="screenshot">[Screenshot: Rating view with stars and tags]</div>
+        <!-- Rating screenshot — capture when user rates a meal -->
 
         <div class="tip"><strong>Tip:</strong> The more you rate, the better your suggestions get. Even a quick star rating makes a difference.</div>
 
@@ -327,7 +330,7 @@
 
         <p>Tableset is built for families. When you create a household, everyone can see the meal plan, coordinate cooking, and make sure every meal is safe for everyone.</p>
 
-        <div class="screenshot">[Screenshot: Household member list]</div>
+        <div class="screenshot"><img src="screenshots/11-profile-settings.png" alt="Smith family household with members"></div>
 
         <h3>Creating a Household</h3>
         <p>Go to your <strong>Profile</strong> and tap <strong>Create Household</strong>. Give it a name (like "The Smiths") and you're the owner.</p>
@@ -359,7 +362,7 @@
 
         <p>Your meal plan automatically generates a consolidated grocery list. No more forgetting ingredients or buying duplicates.</p>
 
-        <div class="screenshot">[Screenshot: Grocery list with categories]</div>
+        <div class="screenshot"><img src="screenshots/08-grocery-list.png" alt="Grocery list organized by category"></div>
 
         <h3>How It Works</h3>
         <p>Tableset looks at every recipe in your weekly plan, combines the ingredients, and groups them by category: produce, proteins, dairy, pantry staples, and more. Duplicate ingredients are merged (two recipes that need onions? You'll see the combined amount).</p>
@@ -375,7 +378,7 @@
 
         <p>Tap your profile icon (top right on most screens) to access settings.</p>
 
-        <div class="screenshot">[Screenshot: Profile/settings screen]</div>
+        <div class="screenshot"><img src="screenshots/11-profile-settings.png" alt="Profile and settings screen"></div>
 
         <h3>Dietary Preferences</h3>
         <p>Set your allergies, dietary restrictions (vegetarian, vegan, gluten-free, etc.), health goals, foods to avoid, spice tolerance, and cuisine preferences. These apply to AI suggestions and are shared with your household.</p>
