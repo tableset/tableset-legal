@@ -129,6 +129,7 @@
                 <li><a href="#family">Sharing with Family</a></li>
                 <li><a href="#grocery">Grocery Lists</a></li>
                 <li><a href="#settings">Settings &amp; Account</a></li>
+                <li><a href="#hosting">Hosting Events</a></li>
             </ol>
         </div>
 
@@ -213,6 +214,18 @@
         <p>Found a recipe online? Copy the URL and paste it into Tableset. AI extracts the recipe from the webpage &mdash; no more scrolling past life stories to find the ingredients.</p>
 
         <div class="tip"><strong>Tip:</strong> You can also share a recipe URL from your browser directly to Tableset using the Share menu.</div>
+
+        <h3>Import from Social Media</h3>
+        <p>Saw a recipe on Instagram, TikTok, YouTube, Pinterest, or X (Twitter)? Paste the link &mdash; or share directly from any of these apps using the Share menu &mdash; and Tableset will pull the recipe from the post's caption or description. Works with reels, video posts, and pinned blog posts.</p>
+        <ul>
+            <li><strong>Supported platforms:</strong> Instagram, TikTok, YouTube, Pinterest, X (Twitter)</li>
+        </ul>
+
+        <h3>Paste Recipe Text</h3>
+        <p>Have a recipe as plain text from a chat, email, or notes app? Tap <strong>Paste Recipe Text</strong> and Tableset will parse the text into a structured recipe with ingredients and steps.</p>
+
+        <h3>Import from Video</h3>
+        <p>Screen-recorded a cooking reel or short video tutorial? Tableset extracts frames from the video and reads the recipe from the on-screen text and visuals.</p>
 
         <h3>Recipe Details</h3>
         <p>Tap any recipe to see the full details:</p>
@@ -338,10 +351,11 @@
             <li><strong>Manage settings</strong> &mdash; "Add a nut allergy for Emma"</li>
             <li><strong>Summarize your plan</strong> &mdash; "What's on the menu this week?"</li>
             <li><strong>Suggest improvements</strong> &mdash; "How can I make this recipe healthier?"</li>
+            <li><strong>Help plan hosting events</strong> &mdash; "What sides go with this?", "Help me plan the prep schedule", or "Explain this step"</li>
         </ul>
 
         <h3>Context Awareness</h3>
-        <p>Sue knows what screen you're on. If you're looking at a recipe, she can answer questions about that specific dish. If you're on the Plan tab, she can help fill or rearrange your week.</p>
+        <p>Sue knows what screen you're on. If you're looking at a recipe, she can answer questions about that specific dish. If you're on the Plan tab, she can help fill or rearrange your week. Inside a hosting event, she sees the full menu, contributors, and prep schedule. On a timeline step, she focuses on that specific task and its ingredients.</p>
 
         <h3>Learning Your Preferences</h3>
         <p>The more you use Tableset, the better Sue gets. She learns from your meal ratings, cooking history, and the cuisines you gravitate toward. Over time, her suggestions become more and more tailored to your household.</p>
@@ -495,6 +509,91 @@
 
         <h3>Getting Help</h3>
         <p>The <strong>App Help</strong> chat is always available in your settings, regardless of your subscription status. Ask questions about how to use any feature and get instant guidance.</p>
+
+        <!-- 10. Hosting Events -->
+        <h2 id="hosting">10. Hosting Events</h2>
+
+        <p>Hosting a dinner party, holiday meal, or BBQ? Tableset's <strong>Hosting Events</strong> feature turns the Plan tab into an event-planning toolkit. Build a multi-course menu, assign dishes to guests, get an AI-generated cooking timeline that paces your prep across multiple days, and step through each task with a focused activity view.</p>
+
+        <h3>Creating an Event</h3>
+        <p>From the Plan tab, tap the wand icon and choose <strong>Plan Event</strong>. Tableset walks you through an 8-step setup wizard:</p>
+        <ol>
+            <li><strong>Pick a Day</strong> &mdash; Select which day of the week your event is on. Days that already have an event are disabled (one event per day).</li>
+            <li><strong>Event Basics</strong> &mdash; Name (e.g., "Easter Dinner"), guest count, and event start time.</li>
+            <li><strong>Menu Categories</strong> &mdash; Choose which courses you want (Mains, Appetizers, Sides, Salads, Desserts, Drinks).</li>
+            <li><strong>Dietary &amp; Allergies</strong> &mdash; Set guest-specific dietary needs and allergies. These are event-only and separate from your personal profile, so you can accommodate guests without changing your household defaults.</li>
+            <li><strong>Prep Availability</strong> &mdash; A calendar shows the days leading up to the event. Tap to mark which days you'll prep. For each selected day, choose total hours (with a stepper) or specific time windows (with start/end pickers that auto-sum to total hours). The event day is always selected.</li>
+            <li><strong>AI Planning Scope</strong> &mdash; Pick "Plan whole menu" (AI fills every category), "Plan specific sections" (AI fills only the categories you check), or "I'll plan it myself" (manual only).</li>
+            <li><strong>Special Requests</strong> &mdash; Free-text field for any extra context for the AI, like "cold-serve only", "spring produce", or "make-ahead friendly".</li>
+            <li><strong>Contributors</strong> &mdash; Add household members and external guests who'll bring dishes. Each gets an emoji avatar.</li>
+        </ol>
+
+        <h3>The Event View</h3>
+        <p>Once created, the event opens in a 3-tab view:</p>
+        <ul>
+            <li><strong>Menu</strong> &mdash; Categories with their dishes. Each dish card shows a recipe image, name, cuisine/time/difficulty badges, and prep timing. Tap a dish for full details.</li>
+            <li><strong>Timeline</strong> &mdash; A multi-day cooking schedule (filled in by tapping <strong>Generate Timeline</strong>).</li>
+            <li><strong>Shopping</strong> &mdash; Auto-generated grocery list aggregated across all dishes.</li>
+        </ul>
+        <p>The header stats show: total dishes, confirmed count, potential count, draft count, and total prep + day-of time.</p>
+
+        <h3>Dish Status</h3>
+        <p>Every dish has one of three statuses to help you keep ideas separate from commitments:</p>
+        <ul>
+            <li><strong>Confirmed</strong> (green) &mdash; "Making this for sure". Counted in timeline and shopping.</li>
+            <li><strong>Potential</strong> (amber) &mdash; "Likely making, still deciding". Counted in timeline and shopping.</li>
+            <li><strong>Draft</strong> (gray) &mdash; "Just an idea". <em>Not</em> counted in timeline or shopping until you upgrade it to Potential or Confirmed.</li>
+        </ul>
+        <p>You can also mark a dish as <strong>Must-make</strong> &mdash; a star priority flag so showstopper dishes stand out at a glance.</p>
+
+        <h3>Adding Dishes</h3>
+        <p>Add dishes from the <strong>+ Add Dish</strong> menu (or the <strong>+</strong> on each category):</p>
+        <ul>
+            <li><strong>AI Suggest for [Category]</strong> &mdash; AI generates dish ideas for that category that fit your event's dietary needs.</li>
+            <li><strong>From My Recipes</strong> &mdash; Pick from your saved Tableset recipes.</li>
+            <li><strong>Custom Dish</strong> &mdash; Manual entry with title, notes, status, and contributor.</li>
+            <li><strong>Ask Sue</strong> &mdash; Open Sue chat with full event context to brainstorm.</li>
+        </ul>
+        <p>Long-press any dish card to delete it.</p>
+
+        <h3>Contributors</h3>
+        <p>Who's bringing what? Add household members and external guests through the wizard or the event's <strong>&#x22EF;</strong> menu &rarr; Contributors. Assign each dish to a contributor &mdash; the avatar shows on the dish card.</p>
+
+        <h3>Cooking Timeline</h3>
+        <p>After your menu is set, tap <strong>Timeline</strong> &rarr; <strong>Generate Timeline</strong> (or use the <strong>&#x22EF;</strong> menu &rarr; Regenerate Timeline if you've added or removed dishes). The AI builds a multi-day schedule that:</p>
+        <ul>
+            <li>Spreads work across the prep days you selected</li>
+            <li>Schedules things like marinades and overnight chilling for the right day</li>
+            <li>Respects oven constraints (no two oven dishes at once)</li>
+            <li>Includes resting and cooling time</li>
+            <li>Ends each dish on event day with a serving step</li>
+        </ul>
+        <p>Each phase (e.g., "2 Days Before", "1 Day Before", "Day Of") shows as a tappable pill at the top. Within a phase you'll see:</p>
+        <ul>
+            <li>A <strong>"Start at:" time picker</strong> &mdash; set when you'll begin prep that day, and every step's clock time updates automatically.</li>
+            <li>A <strong>vertical timeline</strong> of steps with a colored dot, checkbox, computed clock time (e.g., "9:30 AM"), task title, dish name, and duration.</li>
+        </ul>
+
+        <h3>The Activity View</h3>
+        <p>Tap any timeline step to see a summary, then tap <strong>Start Activity</strong> for a focused cooking experience just like our regular Cooking Mode &mdash; but for that one step. The activity view paginates through the step's micro-actions (e.g., "Preheat oven", "Whisk dry ingredients", "Combine and pour", "Bake until done"), showing only:</p>
+        <ul>
+            <li>The instruction for the current micro-step</li>
+            <li>A timer for that micro-step (if needed)</li>
+            <li><strong>Only the ingredients used in that micro-step</strong> &mdash; no noise from the rest of the recipe</li>
+        </ul>
+        <p>Swipe between micro-steps with Previous and Next. The Finish button on the last micro-step marks the whole timeline step complete.</p>
+
+        <h3>Shopping List</h3>
+        <p>The <strong>Shopping</strong> tab aggregates ingredients from every Confirmed and Potential dish. Drafts are excluded until you upgrade them.</p>
+
+        <h3>Sue Knows About Your Event</h3>
+        <p>When you're inside an event or a timeline step, Sue automatically knows the event details &mdash; dishes, contributors, prep schedule, and the specific step you're looking at. Ask her things like "What sides go with this?", "Help me plan the prep schedule", or "Explain this step" and she'll answer with full context.</p>
+
+        <div class="example">
+            <div class="label">Example</div>
+            Sarah is hosting a Summer BBQ for 12 people. She taps <strong>Plan Event</strong>, sets the date for next Saturday at 4 PM, picks Mains/Sides/Desserts, adds her sister-in-law's gluten allergy, and selects two prep days (Friday and Saturday morning). She picks "Plan whole menu" and Tableset generates a coordinated menu of smoked brisket, grilled corn salad, loaded potato salad, and a no-bake berry icebox cake. She taps <strong>Generate Timeline</strong> and gets a Friday-and-Saturday schedule with the brisket rub and icebox cake going on Friday, the brisket smoking from 6 AM Saturday, and everything coming together by 3:55 PM &mdash; just in time for guests.
+            <p style="margin-top: 12px; margin-bottom: 0;"><strong>Works for any kind of gathering:</strong> dinner parties, holiday meals, birthday parties, brunches, cookouts, potlucks, baby showers, game day spreads, or anything else where you're feeding a group.</p>
+        </div>
 
         <p style="margin-top: 40px; text-align: center; color: #888; font-size: 0.9em;">That's everything! If you have questions, reach out to us at <a href="mailto:tableset.legal@gmail.com">tableset.legal@gmail.com</a>.</p>
     </div>
