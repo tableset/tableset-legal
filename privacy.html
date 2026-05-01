@@ -83,11 +83,13 @@
 
         <h2>Information We Do NOT Collect</h2>
         <ul>
-            <li>Email addresses (not requested or stored)</li>
+            <li>Email addresses &mdash; not requested from Apple Sign In, not sent to our servers, no column exists in our database</li>
             <li>Last names</li>
+            <li>Profile photos &mdash; if you set an avatar photo it stays on your device only; we never upload or store photos on our servers</li>
             <li>Location data</li>
-            <li>Device advertising identifiers</li>
+            <li>Device advertising identifiers (IDFA)</li>
             <li>Data from other apps on your device</li>
+            <li>Crash logs or diagnostic data &mdash; we have no analytics or crash-reporting SDKs integrated</li>
         </ul>
 
         <h2>How We Use Your Information</h2>
@@ -129,7 +131,7 @@
         <p>Tableset is not directed at children under 13. We do not knowingly collect personal information from children under 13. Dependent profiles (for family members) are created and managed by the household owner.</p>
 
         <h2>Data Security</h2>
-        <p>All communication between the app and our servers uses HTTPS encryption. API keys are stored server-side and never transmitted to your device. Authentication tokens are stored securely in your device's Keychain.</p>
+        <p>All communication between the app and our servers uses HTTPS encryption. API keys are stored server-side and never transmitted to your device. Authentication tokens are stored securely in your device's Keychain on your device, and the server only stores a JWT signature key &mdash; not the token itself &mdash; so a server breach cannot expose your active session.</p>
 
         <h2>No Tracking or Advertising</h2>
         <p>Tableset does not track you across apps or websites. We do not display advertisements. We do not sell your data to third parties.</p>
@@ -138,7 +140,7 @@
         <p>We may update this privacy policy from time to time. We will notify you of any material changes by posting the new policy in the app.</p>
 
         <h2>Contact Us</h2>
-        <p>If you have questions about this privacy policy, please contact us at <a href="mailto:tableset.legal@gmail.com">tableset.legal@gmail.com</a>.</p>
+        <p>If you have questions about this privacy policy, please contact us at <a href="mailto:support@tableset.io">support@tableset.io</a>.</p>
     </div>
 
     <div class="footer">
